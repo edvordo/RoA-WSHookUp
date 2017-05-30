@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         RoA WSHookUP
 // @namespace    Reltorakii_is_awesome
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       Reltorakii
 // @run-at       document-start
@@ -47,7 +47,6 @@
                         etype = etype + "general";
                     }
                     $(document).trigger(etype, item);
-                    //$(document).trigger("roa-ws:all", item);
                 }
             } catch (ex) {
                 data = event.data;
@@ -65,7 +64,7 @@
 
     setTimeout(function(){
         if (hooked === false) {
-            $.alert("The script 'WSHookUp' failed to hook to the WebSocket connection Avabur uses. In case you are using a nother userscript that depends on this, you may want to refresh the page to try again.", "WSHookUp Failed");
+            $.alert("The script 'WSHookUp' failed to hook to the WebSocket connection Avabur uses. In case you are using another userscript that depends on this, you may want to refresh the page to try again.", "WSHookUp Failed");
         }
     }, 1000);
 })(window);
