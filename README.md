@@ -3,7 +3,7 @@ A simple script to hook to the games' WebSocket connection an broadcasts the rec
 
 ## Changelog
 
-2017-06-12 13:06 - v0.3
+2017-06-12 13:36 - v0.3
  * addded `roa-ws:page:*` events
 
 2017-05-30 11:28 - v0.2
@@ -15,7 +15,10 @@ A simple script to hook to the games' WebSocket connection an broadcasts the rec
 Pick one speciffic to listen to from. All are prepended with `roa-ws:`
 
  * `battle`
- * `harvests`
+ * `harvest`
+ * `craft`
+ * `carve`
+ * `harvest`
  * `gamestats`
  * `mychans`
  * `motd`
