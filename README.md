@@ -4,7 +4,7 @@ A simple script to hook to the games' WebSocket connection an broadcasts the rec
 ## Changelog
 
 2017-06-12 13:36 - v0.3
- * addded `roa-ws:page:*` events
+ * added `roa-ws:page:*` events
 
 2017-05-30 11:28 - v0.2
  * initial version
@@ -12,7 +12,7 @@ A simple script to hook to the games' WebSocket connection an broadcasts the rec
 ## About
 
 ### Available events
-Pick one speciffic to listen to from. All are prepended with `roa-ws:`
+Pick one speciffic to listen to from the list below. All are prepended with `roa-ws:`
 
  * `battle`
  * `harvest`
@@ -63,7 +63,12 @@ $(document).on("roa-ws:battle", function(e, data){
 });
 
 // to listen to TS updates use
-$(document).on("roa-ws:trade", function(e, data){
+$(document).on("roa-ws:harvest", function(e, data){
+    console.log(data); // data has parsed JSON data from the WebSocket event
+});
+
+// crafting updates
+$(document).on("roa-ws:craft", function(e, data){
     console.log(data); // data has parsed JSON data from the WebSocket event
 });
 
@@ -72,7 +77,7 @@ $(document).on("roa-ws:message", function(e, data){
     console.log(data); // data has parsed JSON data from the WebSocket event
 });
 
-// Crystal Shop
+// Crystal Shop popup window
 $(document).on("roa-ws:page:boosts", function(e, data){
     console.log(data); // data has parsed JSON data from the WebSocket event
 });
