@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         RoA WSHookUP
 // @namespace    Reltorakii_is_awesome
-// @version      0.3
+// @version      0.3.1
 // @description  Hooks to the websocket communication and broadcasts the various messages as custom events
 // @author       Reltorakii
 // @run-at       document-start
-// @match        https://beta.avabur.com/game
+// @match        https://*.avabur.com/game*
 // @downloadURL  https://github.com/edvordo/RoA-WSHookUp/raw/master/RoA-WSHookUp.user.js
 // @updateURL    https://github.com/edvordo/RoA-WSHookUp/raw/master/RoA-WSHookUp.user.js
 // @grant        none
