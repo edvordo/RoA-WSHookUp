@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         RoA WSHookUP
 // @namespace    Reltorakii_is_awesome
-// @version      0.3.1
+// @version      0.3.2
 // @description  Hooks to the websocket communication and broadcasts the various messages as custom events
 // @author       Reltorakii
 // @run-at       document-start
@@ -71,6 +71,7 @@
                     }
                 }
             } catch (ex) {
+                console.log(ex);
                 data = event.data;
                 etype = etype + "general";
                 $(document).trigger(etype, data);
