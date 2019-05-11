@@ -18,7 +18,6 @@ Pick one speciffic to listen to from the list below. All are prepended with `roa
  * `harvest`
  * `craft`
  * `carve`
- * `harvest`
  * `gamestats`
  * `mychans`
  * `motd`
